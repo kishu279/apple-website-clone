@@ -60,3 +60,52 @@ document.addEventListener("keydown", function (event) {
     }
   }
 });
+
+// Dropdown menu functionality - Click to open/close
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownItems = document.querySelectorAll(".dropdown-item");
+
+  dropdownItems.forEach((item) => {
+    const link = item.querySelector("a.navlink, a.navicon");
+    const menu = item.querySelector(".dropdown-menu");
+
+    if (link && menu) {
+      // Add click event to toggle dropdown
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        // Close all other dropdowns
+        dropdownItems.forEach((otherItem) => {
+          if (otherItem !== item) {
+            otherItem.classList.remove("active");
+          }
+        });
+
+        // Toggle current dropdown
+        item.classList.toggle("active");
+      });
+    }
+  });
+
+  // Close dropdowns when clicking outside
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".dropdown-item")) {
+      dropdownItems.forEach((item) => {
+        item.classList.remove("active");
+      });
+    }
+  });
+
+  // Ensure dropdown links are clickable
+  const dropdownLinks = document.querySelectorAll(".dropdown-menu a");
+  dropdownLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      // Allow navigation for these links
+      // Don't prevent default unless it's a # link
+      if (this.getAttribute("href") === "#") {
+        e.preventDefault();
+      }
+    });
+  });
+});

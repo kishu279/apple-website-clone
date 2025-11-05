@@ -110,13 +110,69 @@ nav {
   color: white;
 }
 
-.dropdown-item:hover .dropdown-menu {
+.dropdown-item:hover .dropdown-menu,
+.dropdown-item.active .dropdown-menu {
   display: block;
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
 
-.dropdown-item:hover .navlink {
+.dropdown-item:hover .navlink,
+.dropdown-item.active .navlink {
+  color: white;
+}
+
+/* Make dropdown items clickable */
+.dropdown-item a.navlink,
+.dropdown-item a.navicon {
+  cursor: pointer;
+}
+
+/* Shopping Bag Dropdown Styles */
+
+.bag-dropdown {
+  position: relative;
+}
+
+.bag-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transform: none;
+  background-color: rgba(22, 22, 22, 0.95);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  min-width: 180px;
+  padding: 15px 0;
+  margin-top: 12px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.bag-dropdown:hover .bag-menu,
+.bag-dropdown.active .bag-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bag-menu a {
+  display: block;
+  padding: 10px 25px;
+  color: #d3d3d3;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.bag-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
   color: white;
 }
 

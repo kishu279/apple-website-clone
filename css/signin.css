@@ -1,0 +1,293 @@
+/* Sign In Page Styles */
+
+.signin-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f5f7 0%, #e8e8ed 100%);
+  padding: 80px 20px 40px;
+}
+
+.signin-box {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 60px 50px;
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+}
+
+.apple-logo-signin {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.signin-box h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.signin-subtitle {
+  font-size: 16px;
+  color: #6e6e73;
+  margin-bottom: 40px;
+}
+
+/* Input Group Styles */
+
+.input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 16px 12px 8px;
+  font-size: 17px;
+  border: none;
+  border-bottom: 2px solid #d2d2d7;
+  background: transparent;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Helvetica",
+    "Arial";
+}
+
+.input-group label {
+  position: absolute;
+  left: 12px;
+  top: 16px;
+  font-size: 17px;
+  color: #86868b;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group input:not(:placeholder-shown) {
+  border-bottom-color: #0071e3;
+}
+
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label {
+  top: 0;
+  font-size: 12px;
+  color: #0071e3;
+}
+
+.input-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #0071e3;
+  transition: width 0.3s ease;
+}
+
+.input-group input:focus ~ .input-border {
+  width: 100%;
+}
+
+/* Remember and Forgot */
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #1d1d1f;
+  user-select: none;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: relative;
+  height: 18px;
+  width: 18px;
+  background-color: #f5f5f7;
+  border: 2px solid #d2d2d7;
+  border-radius: 4px;
+  margin-right: 8px;
+  transition: all 0.2s ease;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #e8e8ed;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #0071e3;
+  border-color: #0071e3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.forgot-link {
+  color: #0071e3;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.forgot-link:hover {
+  color: #0077ed;
+  text-decoration: underline;
+}
+
+/* Sign In Button */
+
+.signin-button {
+  width: 100%;
+  padding: 16px;
+  background: #0071e3;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Helvetica",
+    "Arial";
+  margin-bottom: 30px;
+}
+
+.signin-button:hover {
+  background: #0077ed;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 113, 227, 0.4);
+}
+
+.signin-button:active {
+  transform: translateY(0);
+}
+
+.arrow-icon {
+  font-size: 24px;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.signin-button:hover .arrow-icon {
+  transform: translateX(5px);
+}
+
+/* Divider */
+
+.divider {
+  position: relative;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #d2d2d7;
+}
+
+.divider span {
+  position: relative;
+  background: white;
+  padding: 0 15px;
+  color: #86868b;
+  font-size: 14px;
+}
+
+/* Alternative Sign In */
+
+.alternative-signin {
+  margin-bottom: 30px;
+}
+
+.no-account {
+  font-size: 15px;
+  color: #1d1d1f;
+  margin-bottom: 10px;
+}
+
+.create-account-link {
+  display: inline-block;
+  color: #0071e3;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.create-account-link:hover {
+  color: #0077ed;
+  text-decoration: underline;
+}
+
+/* Footer */
+
+.signin-footer {
+  padding-top: 20px;
+  border-top: 1px solid #d2d2d7;
+}
+
+.signin-footer p {
+  font-size: 12px;
+  color: #86868b;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .signin-box {
+    padding: 40px 30px;
+  }
+
+  .signin-box h1 {
+    font-size: 28px;
+  }
+
+  .remember-forgot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
