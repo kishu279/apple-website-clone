@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Apple (India)</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <div>
+      <nav>
+        <ul class="navlinks">
+          <li class="applelogo">
+            <a title="mainpage" href="index.html"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="25px"
+                data-name="Layer 1"
+                viewBox="0 0 24 24"
+                id="apple"
+              >
+                <path
+                  fill="#d3d3d3"
+                  d="M14.94,5.19A4.38,4.38,0,0,0,16,2,4.44,4.44,0,0,0,13,3.52,4.17,4.17,0,0,0,12,6.61,3.69,3.69,0,0,0,14.94,5.19Zm2.52,7.44a4.51,4.51,0,0,1,2.16-3.81,4.66,4.66,0,0,0-3.66-2c-1.56-.16-3,.91-3.83.91s-2-.89-3.3-.87A4.92,4.92,0,0,0,4.69,9.39C2.93,12.45,4.24,17,6,19.47,6.8,20.68,7.8,22.05,9.12,22s1.75-.82,3.28-.82,2,.82,3.3.79,2.22-1.24,3.06-2.45a11,11,0,0,0,1.38-2.85A4.41,4.41,0,0,1,17.46,12.63Z"
+                ></path></svg
+            ></a>
+          </li>
+          <div class="responsivediv">
+            <li>
+              <a title="search" class="navicon" href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  id="search"
+                >
+                  <path
+                    fill="#d3d3d3"
+                    d="M3.624,15a8.03,8.03,0,0,0,10.619.659l5.318,5.318a1,1,0,0,0,1.414-1.414l-5.318-5.318A8.04,8.04,0,0,0,3.624,3.624,8.042,8.042,0,0,0,3.624,15Zm1.414-9.96a6.043,6.043,0,1,1-1.77,4.274A6,6,0,0,1,5.038,5.038Z"
+                  ></path></svg
+              ></a>
+            </li>
+            <li class="dropdown-item bag-dropdown">
+              <a title="shopping" class="navicon" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 100 100"
+                  width="20"
+                  height="20"
+                  id="bag"
+                >
+                  <switch>
+                    <g>
+                      <path
+                        fill="#d3d3d3"
+                        d="M68 24v-4C68 8.954 59.046 0 48 0S28 8.954 28 20v4H12v60c0 6.63 5.37 12 12 12h48c6.63 0 12-5.37 12-12V24H68zm-32-4c0-6.627 5.373-12 12-12s12 5.373 12 12v4H36v-4zm40 64c0 2.21-1.79 4-4 4H24c-2.21 0-4-1.79-4-4V32h56v52z"
+                      ></path>
+                    </g>
+                  </switch>
+                </svg>
+              </a>
+              <div class="dropdown-menu bag-menu">
+                <a href="orders.html">Orders</a>
+                <a href="saved.html">Your Save</a>
+                <a href="account.html">Account</a>
+                <a href="signin.html">Sign In</a>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </nav>
+
+      <div class="contact-container">
+        <div class="contact-content">
+          <div class="contact-header">
+            <h1>Contact Us</h1>
+            <p class="contact-subtitle">
+              We'd love to hear from you. Send us a message and we'll respond as
+              soon as possible.
+            </p>
+          </div>
+
+          <div class="contact-layout">
+            <div class="contact-form-section">
+              <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                <div class="form-group">
+                  <label for="contactName">Full Name *</label>
+                  <input
+                    type="text"
+                    id="contactName"
+                    name="name"
+                    required
+                    placeholder="Enter your full name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="contactEmail">Email Address *</label>
+                  <input
+                    type="email"
+                    id="contactEmail"
+                    name="email"
+                    required
+                    placeholder="your.email@example.com"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="contactPhone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="contactPhone"
+                    name="phone"
+                    placeholder="+91 XXXXX XXXXX"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="contactSubject">Subject *</label>
+                  <select id="contactSubject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Product Support</option>
+                    <option value="order">Order Question</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactMessage">Message *</label>
+                  <textarea
+                    id="contactMessage"
+                    name="message"
+                    required
+                    placeholder="How can we help you?"
+                    rows="6"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <div class="contact-info-section">
+              <div class="info-card">
+                <div class="info-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#0071e3"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <h3>Visit Us</h3>
+                <p>
+                  Apple Store<br />123 Main Street<br />Mumbai, India 400001
+                </p>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#0071e3"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3>Call Us</h3>
+                <p>
+                  +91 1800 123 4567<br />Mon-Fri: 9AM - 6PM IST<br />Sat-Sun:
+                  10AM - 4PM IST
+                </p>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#0071e3"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    ></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <h3>Email Us</h3>
+                <p>support@applestore.in<br />sales@applestore.in</p>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#0071e3"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <h3>Business Hours</h3>
+                <p>
+                  Store Hours:<br />Mon-Sun: 10AM - 9PM<br />Support: 24/7
+                  Available
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footertext1">
+          <span
+            >A project by <a href="https://www.github.com/iamreiyn">GROUP 2</a
+            ><br /><br
+          /></span>
+          This website is a project created for educational purposes only.
+          <br /><br />
+          <div class="footer-contact">
+            <a href="index.html" class="contact-button">Back to Home</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      function handleContactSubmit(event) {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+        const data = Object.fromEntries(formData.entries());
+
+        // Display success message
+        alert(
+          `Thank you for contacting us!\n\nWe've received your message:\n\nName: ${data.name}\nEmail: ${data.email}\nSubject: ${data.subject}\n\nWe'll get back to you as soon as possible.`
+        );
+
+        // Reset form
+        event.target.reset();
+
+        // In a real application, you would send this data to a server
+        console.log("Contact form submitted:", data);
+      }
+    </script>
+  </body>
+</html>

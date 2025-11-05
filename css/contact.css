@@ -1,0 +1,197 @@
+/* Contact Page Styles */
+
+.contact-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f5f7 0%, #e8e8ed 100%);
+  padding: 100px 20px 60px;
+}
+
+.contact-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact-header h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 15px;
+}
+
+.contact-subtitle {
+  font-size: 21px;
+  color: #6e6e73;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Contact Layout */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* Contact Form Section */
+
+.contact-form-section {
+  background: white;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-section .form-group {
+  margin-bottom: 25px;
+}
+
+.contact-form-section label {
+  display: block;
+  color: #1d1d1f;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.contact-form-section input,
+.contact-form-section textarea,
+.contact-form-section select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #d2d2d7;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Helvetica",
+    "Arial";
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
+
+.contact-form-section input:focus,
+.contact-form-section textarea:focus,
+.contact-form-section select:focus {
+  outline: none;
+  border-color: #0071e3;
+  background-color: white;
+  box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.1);
+}
+
+.contact-form-section textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 16px 24px;
+  background: #0071e3;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Helvetica",
+    "Arial";
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background: #0077ed;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 113, 227, 0.4);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+/* Contact Info Section */
+
+.contact-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.info-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 113, 227, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.info-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  font-size: 15px;
+  color: #6e6e73;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Design */
+
+@media (max-width: 968px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-header h1 {
+    font-size: 42px;
+  }
+
+  .contact-subtitle {
+    font-size: 18px;
+  }
+
+  .contact-form-section {
+    padding: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-header h1 {
+    font-size: 36px;
+  }
+
+  .contact-form-section {
+    padding: 30px 25px;
+  }
+
+  .info-card {
+    padding: 25px;
+  }
+}
