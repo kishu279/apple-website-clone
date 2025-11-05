@@ -3,281 +3,497 @@
 /* HTML Page */
 
 body {
-    overflow-x: hidden;
-    margin: 0px;
-    padding: 0px;
-    font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Helvetica", "Arial";
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Helvetica",
+    "Arial";
 }
 
 a {
-    text-decoration: none;
-    color: rgb(52, 133, 226);
+  text-decoration: none;
+  color: rgb(52, 133, 226);
 }
 
 /* Navbar Styles */
 
 nav {
-    padding: 0px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 5vh;
-    width: 100%;
-    background-color: rgba(22, 22, 22, 0.8);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    z-index: 1;
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5vh;
+  width: 100%;
+  background-color: rgba(22, 22, 22, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 1;
 }
 
 .navlinks {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    list-style-type: none;
-    flex-wrap: wrap;
-    margin: 0px;
-    padding: 0px;
-    font-size: 13px;
-    padding: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  font-size: 13px;
+  padding: 12px;
 }
 
 .navicon {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .navlink {
-    margin-inline: 15px;
-    color: #d3d3d3;
+  margin-inline: 15px;
+  color: #d3d3d3;
+  transition: color 0.3s ease;
+}
+
+.navlink:hover {
+  color: white;
 }
 
 .responsivediv {
-    display: flex;
+  display: flex;
 }
 
 .respnavbar {
-    display: none;
+  display: none;
 }
 
 .applelogo {
-    margin-inline: 25px;
-    margin-top: -2.9px;
+  margin-inline: 25px;
+  margin-top: -2.9px;
+}
+
+/* Dropdown Menu Styles */
+
+.dropdown-item {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(22, 22, 22, 0.95);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  min-width: 200px;
+  padding: 20px 0;
+  margin-top: 12px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateX(-50%) translateY(-10px);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 30px;
+  color: #d3d3d3;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.dropdown-item:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-item:hover .navlink {
+  color: white;
 }
 
 /* The info box below the Navbar */
 
 .infobartext {
-    margin-top: 50px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .infobar {
-    background-color: white;
-    height: 100%;
-    padding: 10px;
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
+  background-color: white;
+  height: 100%;
+  padding: 10px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
 }
 
 /* Main page - 1 -> iPhone 14 Pro */
 
 .mainpage1 {
-    background-image: url("https://www.apple.com/in/home/images/heroes/iphone-14-pro/hero_iphone14pro_spring__9xo85pm6sbmm_largetall.jpg");
-    height: 588px;
-    background-position: center -35px;
-    background-position-x: center;
+  background-image: url("https://www.apple.com/in/home/images/heroes/iphone-14-pro/hero_iphone14pro_spring__9xo85pm6sbmm_largetall.jpg");
+  height: 588px;
+  background-position: center -35px;
+  background-position-x: center;
 }
 
 .mp1-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 
 .mp1-title1 {
-    margin-top: 30px;
-    font-size: 50px;
-    font-weight: bolder;
+  margin-top: 30px;
+  font-size: 50px;
+  font-weight: bolder;
 }
 
 .mp1-title2 {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .mainpagelink {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* Main page - 2 -> iPhone 14 */
 
 .mainpage2 {
-    background-image: url("https://www.apple.com/in/home/heroes/iphone-14/images/hero_iphone14_yellow__eun20sn4imi6_largetall.jpg");
-    background-position-x: center;
-    height: 82vh;
-    width: 100vw;
+  background-image: url("https://www.apple.com/in/home/heroes/iphone-14/images/hero_iphone14_yellow__eun20sn4imi6_largetall.jpg");
+  background-position-x: center;
+  height: 82vh;
+  width: 100vw;
 }
 
 .mp-default-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: rgb(34, 34, 34);
-    line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(34, 34, 34);
+  line-height: 30px;
 }
 
 .mp2-title1 {
-    margin-top: 60px;
-    font-size: 50px;
-    font-weight: bolder;
-    margin-bottom: 15px;
+  margin-top: 60px;
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 15px;
 }
 
 .mp2-desc {
-    font-size: 23px;
+  font-size: 23px;
 }
 
 .mainpagelink {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* Main page - 3 -> Apple watch */
 
 .mainpage3 {
-    background-image: url("https://www.apple.com/in/home/images/heroes/apple-watch-series-8/hero_apple_watch_series_8_spring__b1y8wb7xjc9y_largetall.jpg");
-    height: 78vh;
-    background-position-x: center;
+  background-image: url("https://www.apple.com/in/home/images/heroes/apple-watch-series-8/hero_apple_watch_series_8_spring__b1y8wb7xjc9y_largetall.jpg");
+  height: 78vh;
+  background-position-x: center;
 }
 
 .mp3desc {
-    font-size: 23px;
-    color: white;
-    margin-bottom: 15px;
+  font-size: 23px;
+  color: white;
+  margin-bottom: 15px;
 }
 
 /* Main page - 4 -> grid items */
 
 .mainpage4 {
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .grid-item {
-    flex-basis: 49%;
-    margin: 5px;
+  flex-basis: 49%;
+  margin: 5px;
 }
 
 .applewatchlogo {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 .applewatchcontainer {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .motherday {
-    margin-top: 50px;
-    font-size: 35px;
-    font-weight: bold;
-    width: 350px;
-    text-align: center;
-    line-height: 40px;
+  margin-top: 50px;
+  font-size: 35px;
+  font-weight: bold;
+  width: 350px;
+  text-align: center;
+  line-height: 40px;
 }
 
 .motherday2 {
-    margin-top: 10px;
-    width: 250px;
-    text-align: center;
-    line-height: 20px;
-    font-size: 18px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  width: 250px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .promo1 {
-    background-image: url("https://www.apple.com/v/home/az/images/promos/iphone-tradein/iphone_tradein_promo__d5au3rkw5kuq_large.jpg");
-    background-position-x: center;
-    height: 560px;
-
+  background-image: url("https://www.apple.com/v/home/az/images/promos/iphone-tradein/iphone_tradein_promo__d5au3rkw5kuq_large.jpg");
+  background-position-x: center;
+  height: 560px;
 }
 
 .promo2 {
-    background-image: url("https://www.apple.com/v/home/az/images/promos/wwdc23-announce/promo_wwdc23__b68ptht3mro2_large.jpg");
-    background-position-x: center;
-    height: 560px;
+  background-image: url("https://www.apple.com/v/home/az/images/promos/wwdc23-announce/promo_wwdc23__b68ptht3mro2_large.jpg");
+  background-position-x: center;
+  height: 560px;
 }
 
 .promo3 {
-    background-image: url("https://www.apple.com/v/home/az/images/promos/ipad/promo_ipad__fioegapg12qi_large.jpg");
-    background-position-x: center;
-    height: 560px;
+  background-image: url("https://www.apple.com/v/home/az/images/promos/ipad/promo_ipad__fioegapg12qi_large.jpg");
+  background-position-x: center;
+  height: 560px;
 }
 
 .promo4 {
-    background-image: url("https://www.apple.com/v/home/az/images/promos/macbook-pro-14-and-16/promo_mbp__ek7p477bkp6q_large.jpg");
-    background-position-x: center;
-    height: 560px;
+  background-image: url("https://www.apple.com/v/home/az/images/promos/macbook-pro-14-and-16/promo_mbp__ek7p477bkp6q_large.jpg");
+  background-position-x: center;
+  height: 560px;
 }
 
 .promo5 {
-    background-image: url("https://www.apple.com/v/home/az/images/promos/mothers-day-2023/airpods/promo__sw58lbodkmqq_large.jpg");
-    background-position-x: center;
-    height: 560px;
+  background-image: url("https://www.apple.com/v/home/az/images/promos/mothers-day-2023/airpods/promo__sw58lbodkmqq_large.jpg");
+  background-position-x: center;
+  height: 560px;
 }
 
 .promo6 {
-    background-image: url("https://www.apple.com/in/home/promos/apple-watch-ultra/images/promo_apple_watch_ultra__gnsqulvdc4a6_large.jpg");
-    background-position-x: center;
-    height: 560px;
+  background-image: url("https://www.apple.com/in/home/promos/apple-watch-ultra/images/promo_apple_watch_ultra__gnsqulvdc4a6_large.jpg");
+  background-position-x: center;
+  height: 560px;
 }
 
 #ipadtitle {
-    margin-top: 50px;
-    font-size: 36px;
-    font-weight: bolder;
+  margin-top: 50px;
+  font-size: 36px;
+  font-weight: bolder;
 }
 
 #mactitle {
-    margin-top: 50px;
-    font-size: 36px;
-    font-weight: bolder;
-    color: white;
+  margin-top: 50px;
+  font-size: 36px;
+  font-weight: bolder;
+  color: white;
 }
 
 #macdescription {
-    margin-top: 10px;
-    color: white;
-    font-size: 19px;
+  margin-top: 10px;
+  color: white;
+  font-size: 19px;
 }
 
 .appletradein {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .wwdc23 {
-    margin-top: 350px;
+  margin-top: 350px;
 }
 
 .wwdc23text {
-    color: white;
+  color: white;
 }
 
 /* Footer  */
 
 footer {
-    background-color: rgb(243, 243, 243);
-    height: 100%;
-    display: flex;
-    justify-content: center;
+  background-color: rgb(243, 243, 243);
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .footertext1 {
-    margin: 25px;
-    width: 820px;
-    font-size: 13px;
-    color: rgb(71, 71, 71);
+  margin: 25px;
+  width: 820px;
+  font-size: 13px;
+  color: rgb(71, 71, 71);
+}
+
+/* Modal Styles */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 5% auto;
+  padding: 40px;
+  border-radius: 18px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideDown 0.3s ease;
+  position: relative;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.close {
+  color: #86868b;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 32px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: #1d1d1f;
+}
+
+.modal-content h2 {
+  color: #1d1d1f;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #1d1d1f;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d2d2d7;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Helvetica",
+    "Arial";
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #0071e3;
+  box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.1);
+}
+
+.form-group input[readonly] {
+  background-color: #f5f5f7;
+  color: #6e6e73;
+  cursor: not-allowed;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn-cancel,
+.btn-submit {
+  flex: 1;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 980px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Helvetica",
+    "Arial";
+}
+
+.btn-cancel {
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+}
+
+.btn-cancel:hover {
+  background-color: #e8e8ed;
+}
+
+.btn-submit {
+  background-color: #0071e3;
+  color: white;
+}
+
+.btn-submit:hover {
+  background-color: #0077ed;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 113, 227, 0.3);
+}
+
+.btn-submit:active {
+  transform: translateY(0);
 }

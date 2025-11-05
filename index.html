@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" type="text/css" href="css/responsive.css">
   <link rel="icon" type="image/x-icon" href="favicon.png">
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -21,16 +22,115 @@
                 d="M14.94,5.19A4.38,4.38,0,0,0,16,2,4.44,4.44,0,0,0,13,3.52,4.17,4.17,0,0,0,12,6.61,3.69,3.69,0,0,0,14.94,5.19Zm2.52,7.44a4.51,4.51,0,0,1,2.16-3.81,4.66,4.66,0,0,0-3.66-2c-1.56-.16-3,.91-3.83.91s-2-.89-3.3-.87A4.92,4.92,0,0,0,4.69,9.39C2.93,12.45,4.24,17,6,19.47,6.8,20.68,7.8,22.05,9.12,22s1.75-.82,3.28-.82,2,.82,3.3.79,2.22-1.24,3.06-2.45a11,11,0,0,0,1.38-2.85A4.41,4.41,0,0,1,17.46,12.63Z">
               </path>
             </svg></a></li>
-        <li> <a title="macpage" class='navlink' href="/">Mac</a></li>
-        <li> <a title="storepage" class='navlink' href="/applestore">Store</a></li>
-        <li> <a title="ipadpage" class='navlink' href="/">iPad</a></li>
-        <li> <a title="iphonepage" class='navlink' href="/">iPhone</a></li>
-        <li> <a title="watchpage" class='navlink' href="/">Watch</a></li>
-        <li> <a title="airpodspage" class='navlink' href="/">AirPods</a></li>
-        <li> <a title="tvhomepage" class='navlink' href="/">TV & Home</a></li>
-        <li> <a title="entertainpage" class='navlink' href="/">Entertainment</a></li>
-        <li> <a title="accesoriespage" class='navlink' href="/">Accessories</a></li>
-        <li> <a title="helppage" class='navlink' href="/">Support</a></li>
+        <li class="dropdown-item"> 
+          <a title="storepage" class='navlink' href="/applestore">Store</a>
+          <div class="dropdown-menu">
+            <a href="/">Shop the Latest</a>
+            <a href="/">Mac</a>
+            <a href="/">iPad</a>
+            <a href="/">iPhone</a>
+            <a href="/">Watch</a>
+            <a href="/">AirPods</a>
+            <a href="/">Accessories</a>
+          </div>
+        </li>
+        <li class="dropdown-item"> 
+          <a title="macpage" class='navlink' href="/">Mac</a>
+          <div class="dropdown-menu">
+            <a href="/">MacBook Air</a>
+            <a href="/">MacBook Pro</a>
+            <a href="/">iMac</a>
+            <a href="/">Mac mini</a>
+            <a href="/">Mac Studio</a>
+            <a href="/">Mac Pro</a>
+          </div>
+        </li>
+        <li class="dropdown-item"> 
+          <a title="ipadpage" class='navlink' href="/">iPad</a>
+          <div class="dropdown-menu">
+            <a href="/">iPad Pro</a>
+            <a href="/">iPad Air</a>
+            <a href="/">iPad</a>
+            <a href="/">iPad mini</a>
+            <a href="/">Apple Pencil</a>
+            <a href="/">Keyboards</a>
+          </div>
+        </li>
+        <li class="dropdown-item"> 
+          <a title="iphonepage" class='navlink' href="/">iPhone</a>
+          <div class="dropdown-menu">
+            <a href="/">iPhone 14 Pro</a>
+            <a href="/">iPhone 14</a>
+            <a href="/">iPhone 13</a>
+            <a href="/">iPhone 12</a>
+            <a href="/">iPhone SE</a>
+            <a href="/">Compare</a>
+          </div>
+        </li>
+        <li class="dropdown-item"> 
+          <a title="watchpage" class='navlink' href="/">Watch</a>
+          <div class="dropdown-menu">
+            <a href="/">Apple Watch Ultra</a>
+            <a href="/">Apple Watch Series 8</a>
+            <a href="/">Apple Watch SE</a>
+            <a href="/">Apple Watch Nike</a>
+            <a href="/">Apple Watch Hermès</a>
+            <a href="/">Bands</a>
+          </div>
+        </li>
+        <li class="dropdown-item"> 
+          <a title="airpodspage" class='navlink' href="/">AirPods</a>
+          <div class="dropdown-menu">
+            <a href="/">AirPods Pro (2nd gen)</a>
+            <a href="/">AirPods (3rd gen)</a>
+            <a href="/">AirPods (2nd gen)</a>
+            <a href="/">AirPods Max</a>
+            <a href="/">Compare</a>
+          </div>
+        </li>
+        <li class="dropdown-item"> 
+          <a title="tvhomepage" class='navlink' href="/">TV & Home</a>
+          <div class="dropdown-menu">
+            <a href="/">Apple TV 4K</a>
+            <a href="/">Apple TV+</a>
+            <a href="/">Apple TV app</a>
+            <a href="/">HomePod</a>
+            <a href="/">HomePod mini</a>
+          </div>
+        </li>
+        <li class="dropdown-item"> 
+          <a title="entertainpage" class='navlink' href="/">Entertainment</a>
+          <div class="dropdown-menu">
+            <a href="/">Apple TV+</a>
+            <a href="/">Apple Music</a>
+            <a href="/">Apple Arcade</a>
+            <a href="/">Apple Fitness+</a>
+            <a href="/">Apple Podcasts</a>
+            <a href="/">Apple Books</a>
+          </div>
+        </li>
+        <li class="dropdown-item"> 
+          <a title="accesoriespage" class='navlink' href="/">Accessories</a>
+          <div class="dropdown-menu">
+            <a href="/">Shop All</a>
+            <a href="/">Mac Accessories</a>
+            <a href="/">iPad Accessories</a>
+            <a href="/">iPhone Accessories</a>
+            <a href="/">Watch Bands</a>
+            <a href="/">AirTag</a>
+          </div>
+        </li>
+        <li class="dropdown-item"> 
+          <a title="helppage" class='navlink' href="/">Support</a>
+          <div class="dropdown-menu">
+            <a href="/">iPhone Support</a>
+            <a href="/">Mac Support</a>
+            <a href="/">iPad Support</a>
+            <a href="/">Watch Support</a>
+            <a href="/">AirPods Support</a>
+            <a href="/">Contact Apple</a>
+          </div>
+        </li>
         <div class="responsivediv">
           <li> <a title="search" class='navicon' href="/"><svg xmlns="http://www.w3.org/2000/svg" height="20px"
                 viewBox="0 0 24 24" id="search">
@@ -71,7 +171,7 @@
       <div class="mp1-text">
         <span class="mp1-title1">iPhone 14 Pro</span>
         <span class="mp1-title2">Pro. Beyond.</span>
-        <div class="mainpagelink"><a href="">Learn More ></a> <a href="">Buy ></a></div>
+        <div class="mainpagelink"><a href="learn-more.html">Learn More ></a> <a href="#" onclick="openBuyModal(event, 'iPhone 14 Pro')">Buy ></a></div>
       </div>
     </div>
     <div class="mainpage2">
@@ -79,7 +179,7 @@
         <span class="mp2-title1">iPhone 14</span>
         <span class="mp2-desc">To great sizes.</span>
         <span class="mp2-desc">Now with a splash of yellow.</span>
-        <div class="mainpagelink"><a href="">Learn More ></a> <a href="">Buy ></a></div>
+        <div class="mainpagelink"><a href="learn-more.html">Learn More ></a> <a href="#" onclick="openBuyModal(event, 'iPhone 14')">Buy ></a></div>
       </div>
     </div>
   </div>
@@ -89,7 +189,7 @@
           src="https://www.apple.com/v/home/az/images/logos/apple-watch-series-8/hero_logo_apple_watch_series_8__ezarmmoobhg2_largetall.png"
           alt="apple watch series"></span>
       <span class="mp3desc">A healthy leap ahead.</span>
-      <div class="mainpagelink"><a href="">Learn More ></a> <a href="">Buy ></a></div>
+      <div class="mainpagelink"><a href="learn-more.html">Learn More ></a> <a href="#" onclick="openBuyModal(event, 'Apple Watch Series 8')">Buy ></a></div>
     </div>
   </div>
   </div>
@@ -119,7 +219,7 @@
       <div class="mp-default-text">
         <span id="ipadtitle">iPad</span>
         <span>Loveable. Drawable. Magical.</span>
-        <div class="mainpagelink"><a href="">Learn More ></a> <a href="">Buy ></a></div>
+        <div class="mainpagelink"><a href="learn-more.html">Learn More ></a> <a href="#" onclick="openBuyModal(event, 'iPad')">Buy ></a></div>
       </div>
 
     </div>
@@ -127,7 +227,7 @@
       <div class="mp-default-text">
         <span id="mactitle">MacBook Pro</span>
         <span id="macdescription">Supercharged by M2 Pro and M2 Max.</span>
-        <div class="mainpagelink"><a href="">Learn More ></a> <a href="">Buy ></a></div>
+        <div class="mainpagelink"><a href="learn-more.html">Learn More ></a> <a href="#" onclick="openBuyModal(event, 'MacBook Pro')">Buy ></a></div>
       </div>
 
     </div>
@@ -145,12 +245,63 @@
             src="https://www.apple.com/v/home/az/images/logos/apple-watch-ultra/promo_logo_apple_watch_ultra__ebzaahharnue_large.png"
             alt="apple watch ultra"></span>
         <span>Adventure awaits.</span>
-        <div class="mainpagelink"><a href="">Learn More ></a> <a href="">Buy ></a></div>
+        <div class="mainpagelink"><a href="learn-more.html">Learn More ></a> <a href="#" onclick="openBuyModal(event, 'Apple Watch Ultra')">Buy ></a></div>
       </div>
 
     </div>
 
   </div>
+
+  <!-- Buy Modal Form -->
+  <div id="buyModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeBuyModal()">&times;</span>
+      <h2 id="modalTitle">Purchase Details</h2>
+      <form id="buyForm" onsubmit="handleBuySubmit(event)">
+        <div class="form-group">
+          <label for="productName">Product</label>
+          <input type="text" id="productName" name="productName" readonly>
+        </div>
+        
+        <div class="form-group">
+          <label for="fullName">Full Name *</label>
+          <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+        </div>
+        
+        <div class="form-group">
+          <label for="address">Shipping Address *</label>
+          <textarea id="address" name="address" required placeholder="Enter your complete address" rows="3"></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="quantity">Quantity *</label>
+          <select id="quantity" name="quantity" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        
+        <div class="form-actions">
+          <button type="button" class="btn-cancel" onclick="closeBuyModal()">Cancel</button>
+          <button type="submit" class="btn-submit">Submit Order</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <footer>
     <div class="footertext1"><span>A project by <a href="https://www.github.com/iamreiyn">Monty
           Mahato</a><br /><br /></span>

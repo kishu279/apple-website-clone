@@ -1,0 +1,160 @@
+/* Learn More Page Styles */
+
+.learn-more-container {
+  margin-top: 5vh;
+  background-color: white;
+}
+
+.hero-section {
+  background: linear-gradient(180deg, #f5f5f7 0%, #ffffff 100%);
+  padding: 80px 20px 60px;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 56px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 10px;
+}
+
+.product-subtitle {
+  font-size: 28px;
+  font-weight: 400;
+  color: #6e6e73;
+  margin-bottom: 40px;
+}
+
+.hero-image {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.content-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.feature-block {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.feature-block h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 20px;
+}
+
+.feature-block p {
+  font-size: 21px;
+  line-height: 1.5;
+  color: #6e6e73;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.specs-section {
+  background-color: #f5f5f7;
+  padding: 60px 40px;
+  border-radius: 20px;
+  margin: 60px 0;
+}
+
+.specs-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.specs-section ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.specs-section li {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #1d1d1f;
+  padding: 15px 0;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+.specs-section li:last-child {
+  border-bottom: none;
+}
+
+.specs-section strong {
+  color: #1d1d1f;
+}
+
+.cta-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.back-button,
+.buy-button {
+  display: inline-block;
+  padding: 15px 35px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 980px;
+  transition: all 0.3s ease;
+}
+
+.back-button {
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+}
+
+.back-button:hover {
+  background-color: #e8e8ed;
+}
+
+.buy-button {
+  background-color: #0071e3;
+  color: white;
+}
+
+.buy-button:hover {
+  background-color: #0077ed;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 113, 227, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-title {
+    font-size: 40px;
+  }
+
+  .product-subtitle {
+    font-size: 22px;
+  }
+
+  .feature-block h2 {
+    font-size: 28px;
+  }
+
+  .feature-block p {
+    font-size: 18px;
+  }
+
+  .hero-image {
+    max-width: 90%;
+  }
+}

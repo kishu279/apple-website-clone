@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn More - Apple (India)</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/learn-more.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+  </head>
+
+  <body>
+    <div>
+      <nav>
+        <ul class="navlinks">
+          <li class="applelogo">
+            <a title="mainpage" href="index.html"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="25px"
+                data-name="Layer 1"
+                viewBox="0 0 24 24"
+                id="apple"
+              >
+                <path
+                  fill="#d3d3d3"
+                  d="M14.94,5.19A4.38,4.38,0,0,0,16,2,4.44,4.44,0,0,0,13,3.52,4.17,4.17,0,0,0,12,6.61,3.69,3.69,0,0,0,14.94,5.19Zm2.52,7.44a4.51,4.51,0,0,1,2.16-3.81,4.66,4.66,0,0,0-3.66-2c-1.56-.16-3,.91-3.83.91s-2-.89-3.3-.87A4.92,4.92,0,0,0,4.69,9.39C2.93,12.45,4.24,17,6,19.47,6.8,20.68,7.8,22.05,9.12,22s1.75-.82,3.28-.82,2,.82,3.3.79,2.22-1.24,3.06-2.45a11,11,0,0,0,1.38-2.85A4.41,4.41,0,0,1,17.46,12.63Z"
+                ></path></svg
+            ></a>
+          </li>
+          <li class="dropdown-item">
+            <a title="storepage" class="navlink" href="/applestore">Store</a>
+          </li>
+          <li class="dropdown-item">
+            <a title="macpage" class="navlink" href="/">Mac</a>
+          </li>
+          <li class="dropdown-item">
+            <a title="ipadpage" class="navlink" href="/">iPad</a>
+          </li>
+          <li class="dropdown-item">
+            <a title="iphonepage" class="navlink" href="/">iPhone</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="learn-more-container">
+        <div class="hero-section">
+          <h1 class="product-title">iPhone 14 Pro</h1>
+          <h2 class="product-subtitle">Pro. Beyond.</h2>
+          <img
+            src="https://www.apple.com/v/iphone-14-pro/b/images/overview/hero/hero_endframe__ea0qze85eyi6_large.jpg"
+            alt="iPhone 14 Pro"
+            class="hero-image"
+          />
+        </div>
+
+        <div class="content-section">
+          <div class="feature-block">
+            <h2>Dynamic Island</h2>
+            <p>
+              A magical new way to interact with iPhone. Dynamic Island bubbles
+              up alerts and Live Activities — so you don't miss them while
+              you're doing something else.
+            </p>
+          </div>
+
+          <div class="feature-block">
+            <h2>48MP Main Camera</h2>
+            <p>
+              The new Main camera features our largest sensor ever for
+              mind-blowing detail. Now you can shoot in super-high-resolution
+              48MP ProRAW.
+            </p>
+          </div>
+
+          <div class="feature-block">
+            <h2>Always-On Display</h2>
+            <p>
+              Your Lock Screen stays glanceable, so you don't have to tap it to
+              stay in the know. The Always-On display intelligently dims when
+              you're not looking at it.
+            </p>
+          </div>
+
+          <div class="feature-block">
+            <h2>A16 Bionic Chip</h2>
+            <p>
+              The ultimate smartphone chip. A Pro-class GPU with breakthrough
+              performance and efficiency. Advanced display engine for the
+              Dynamic Island. Powerful pro camera features.
+            </p>
+          </div>
+
+          <div class="specs-section">
+            <h2>Technical Specifications</h2>
+            <ul>
+              <li>
+                <strong>Display:</strong> 6.1-inch Super Retina XDR display with
+                ProMotion
+              </li>
+              <li>
+                <strong>Camera:</strong> Pro camera system (48MP Main, 12MP
+                Ultra Wide, 12MP 2x Telephoto)
+              </li>
+              <li><strong>Chip:</strong> A16 Bionic chip with 5-core GPU</li>
+              <li><strong>Battery:</strong> Up to 23 hours video playback</li>
+              <li><strong>Storage:</strong> 128GB, 256GB, 512GB, 1TB</li>
+              <li>
+                <strong>Colors:</strong> Deep Purple, Gold, Silver, Space Black
+              </li>
+            </ul>
+          </div>
+
+          <div class="cta-section">
+            <a href="index.html" class="back-button">← Back to Home</a>
+            <a href="#" class="buy-button" onclick="openBuyForm(event)"
+              >Buy Now</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footertext1">
+          <span
+            >A project by
+            <a href="https://www.github.com/iamreiyn">Monty Mahato</a><br /><br
+          /></span>
+          This website is a project created for educational purposes only. The
+          content, design, and layout are based on the official Apple website
+          and are intended to showcase the skills of the creator.
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      function openBuyForm(event) {
+        event.preventDefault();
+        // This will be handled by the main script
+        if (window.opener) {
+          window.close();
+        } else {
+          window.location.href = "index.html#buy";
+        }
+      }
+    </script>
+  </body>
+</html>
